@@ -6,7 +6,7 @@
 </div>
 
 <div align = "center">
-<h2><a href="https://clone-pagina-youtube.vercel.app/" target="_blank"> Acesse Agora </a></h2>
+<h2><a href="https://clone-discord-dusky.vercel.app/" target="_blank"> Acesse Agora </a></h2>
 
 <p> </p>
 
