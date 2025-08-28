@@ -1,0 +1,348 @@
+:root {
+    --primay-color: #FFFFFF;
+    --secondary-color: #23272A;
+    --font-size: 16px;
+    --font-family: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 505px 573px repeat(2, 507px) 560px 140px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/Header\ Background.png');
+    width: 100vw;
+    min-width: 100vw;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+}
+
+.conteudo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;      /* 90% da largura da viewport */
+    height: auto;     /* Altura automática */
+    min-height: 200px;
+    margin: 24px;
+    gap: 24px;
+}
+
+#titulo {
+    display: flex; 
+    align-self: flex-start;
+    width: 100%;
+    max-width: 278px;
+    height: auto;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    size: 32px;
+    color: #FFFFFF;
+}
+
+#descricao-titulo {
+    display: flex; 
+    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+
+}
+
+.conteudo-header-botoes {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    text-decoration: none;
+    
+
+}
+
+#baixar, #abrir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 54px;
+    border-radius: 28px;
+    text-decoration: none;
+    border: none;
+}
+
+#baixar {
+    display: flex;
+    background-color: #FFFFFF;
+    color: #23272A;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+#abrir {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--primay-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.informacao-1, .informacao-2, .informacao-3, .informacao-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;      /* 90% da largura da viewport */
+    height: auto;     /* Altura automática */
+    min-height: 200px;
+    gap: 24px;
+    padding: 40px 24px 40px 24px;
+}
+
+#img-discord {
+    width: 379px;
+    height: 252px;
+    padding: 16px 8px 16px 8px;
+}
+
+#titulo-main {
+    display: flex; 
+    align-self: flex-start;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    size: 24px;
+    color: var(--secondary-color);
+    }
+
+#descricao-main {
+    display: flex; 
+    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 381px;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    }
+
+.informacao-2, .informacao-4 {
+    background-color: #F6F6F6;
+}
+
+#titulo-main-4 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-discord {
+    width: 162px;
+    height: 30.77px;
+}
+
+@media (min-width: 450px) {
+
+html, body {
+display: grid;
+grid-template-columns: 1fr;
+width: 100%;
+grid-template-rows: 459px repeat(3, 448px) 744px 134px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/images/Header\ Background\ \(1\).png')
+}
+
+.conteudo-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 757px;
+    background-size: cover;
+}
+
+#titulo {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+#descricao-titulo {
+    display: flex; 
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.conteudo-header-botoes {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 502px;
+    max-height: 44px;
+    gap: 16px;
+}
+
+#baixar, #abrir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    text-decoration: none;
+    border: none;
+}
+
+#baixar {
+    display: flex;
+    background-color: #FFFFFF;
+    color: #23272A;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#abrir {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--primay-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.informacao-1, .informacao-2, .informacao-3, .informacao-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+#img-discord {
+    width: 607px;
+    height: 394px;
+    padding: 16px 8px 16px 8px;
+}
+
+.titulo_descricao_informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#titulo-main {
+    display: flex; 
+    align-self: flex-start;
+    width: 100%;
+    max-height: 270px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--secondary-color);
+    }
+
+#descricao-main {
+    display: flex; 
+    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 381px;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    }
+
+.informacao-2, .informacao-4 {
+    background-color: #F6F6F6;
+}
+
+#titulo-main-4 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+}
+
+
+
+
+
